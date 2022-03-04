@@ -43,7 +43,7 @@ function App() {
   const [difficulty, setDifficulty] = useSetting<number>("difficulty", 0);
   const [keyboard, setKeyboard] = useSetting<string>(
     "keyboard",
-    "qwertyuiop-asdfghjkl-BzxcvbnmE"
+    "qwertyuiop-asdfghjkl-EzxcvbnmB"
   );
   const [enterLeft, setEnterLeft] = useSetting<boolean>("enter-left", false);
 
@@ -161,11 +161,11 @@ function App() {
               value={keyboard}
               onChange={(e) => setKeyboard(e.target.value)}
             >
-              <option value="qwertyuiop-asdfghjkl-BzxcvbnmE">QWERTY</option>
-              <option value="azertyuiop-qsdfghjklm-BwxcvbnE">AZERTY</option>
-              <option value="qwertzuiop-asdfghjkl-ByxcvbnmE">QWERTZ</option>
+              <option value="qwertyuiop-asdfghjkl-EzxcvbnmB">QWERTY</option>
+              <option value="azertyuiop-qsdfghjklm-EwxcvbnB">AZERTY</option>
+              <option value="qwertzuiop-asdfghjkl-EyxcvbnmB">QWERTZ</option>
               <option value="BpyfgcrlE-aoeuidhtns-qjkxbmwvz">Dvorak</option>
-              <option value="qwfpgjluy-arstdhneio-BzxcvbkmE">Colemak</option>
+              <option value="qwfpgjluy-arstdhneio-EzxcvbkmB">Colemak</option>
             </select>
             <input
               style={{ marginLeft: 20 }}
